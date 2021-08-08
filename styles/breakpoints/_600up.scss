@@ -1,0 +1,160 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+.mobile {
+    display:none;
+}
+
+.tablet {
+    display:block;
+ }
+ 
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+ 
+.fv {
+    height: 730px;
+    
+    &-txt {
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        & > p {
+            margin-top: 250px;
+            padding:18px 25px;
+            font-size: 24px;
+ 
+            &:nth-child(1) {
+                margin-left: 60px;
+            }
+ 
+            &:nth-child(2) {
+                margin-left: 50px;
+            } 
+        }
+    }
+}
+ 
+.sv {
+    & > .wrapper {
+       display: flex;
+    }
+ 
+    &-txt {
+        text-align: left;
+        &-ttl {
+            & > p {
+                font-size: 24px;
+ 
+                &:nth-child(1) {
+                    margin-top: 50px;
+                }
+ 
+                &:nth-child(2) {
+                    margin-top: 32px;
+                }
+            }
+        }
+ 
+        & > p {
+            font-size: 14px;
+            margin-top: 37px;
+        }
+    }
+ 
+    &-img {
+        margin-top: 65px;
+        margin-left: 15px;
+        margin-bottom: 82px;
+ 
+        & > img {
+            width:320px;
+        }
+    }
+}
+ 
+.remedy {
+    padding-bottom: 10px;
+    & > .wrapper {
+        & > p {
+            font-size: 16px;
+        }
+    }
+
+    &-card {
+        width: 560px;
+
+        & > p {
+            font-size: 16px;
+        }
+
+        &s {
+            width:80%;
+            margin: 0 auto;
+        }
+   }
+}
+
+.news {
+    &-list {
+        & > ul {
+            & > li {
+                // display:flex;
+                border-bottom: 2px solid #E7E7E7;
+                padding: 18.5px 0;
+
+                & > time {
+                }
+
+                & > span {
+                }
+
+                & > a {
+                    font-size:16px;
+                }
+            }
+        }
+
+        & > .news-viewall {
+            & > a {
+                font-size:16px;
+                &:after {
+                    top:5.4px;
+                    left:78.25px;   
+                    border-width: 8px 0 8px 10px;  
+                }
+            }
+        }
+    }
+}
+
+.info {
+    padding:40px 0;
+    & > .wrapper {
+        display: flex;
+    }
+
+    &-access {
+        margin-top: 70px;
+        margin-right: 20px;
+    }
+
+    &-hsptl {
+        &-address {
+            margin: 25px 10px;
+        }
+        &-tel {
+            &:before {
+                left: 60px;
+            }
+        }
+
+        &-copyright {
+            font-size: 12px;
+        }
+    }
+}
